@@ -1,0 +1,10 @@
+.floor{
+
+  height: 100vh;
+  background-color: #888;
+  padding-top: constant(safe-area-inset-top);
+
+  .helloworld {
+    background-color: magenta;
+  }
+}

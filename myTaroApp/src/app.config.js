@@ -3,7 +3,8 @@ export default {
     'pages/dashboard/index',
     'pages/clue/index',
     'pages/market/index',
-    'pages/mine/index'
+    'pages/mine/index',
+    'pages/floor/index'
   ],
   tabBar: {
     list: [

@@ -1,24 +1,31 @@
-import React, { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import './index.scss'
+import React, { Component } from "react";
+import { View, Text, Button } from "@tarojs/components";
+import Taro from "@tarojs/taro";
+import "./index.scss";
 
 export default class Mine extends Component {
+  componentWillMount() {}
 
-  componentWillMount () { }
+  componentDidMount() {}
 
-  componentDidMount () { }
+  componentWillUnmount() {}
 
-  componentWillUnmount () { }
+  componentDidShow() {}
 
-  componentDidShow () { }
+  componentDidHide() {}
 
-  componentDidHide () { }
+  goto() {
+    Taro.navigateTo({
+      url: "/pages/floor/index",
+    });
+  }
 
-  render () {
+  render() {
     return (
-      <View className='mine'>
+      <View className="mine">
         <Text>Hello world!</Text>
+        <Button onClick={this.goto}>去楼层页面</Button>
       </View>
-    )
+    );
   }
 }
