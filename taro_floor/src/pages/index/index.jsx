@@ -25,13 +25,13 @@ export default class Index extends Component {
 
   componentWillUnmount() {}
 
-  componentDidShow() {}
-
-  componentDidHide() {}
-
   anchorArray = []
 
   onReady() {
+    this.setNeedsLayout()
+  }
+
+  setNeedsLayout() {
     Taro.createSelectorQuery().selectAll('.unit').boundingClientRect(e => {
       console.log('e', e)
       let h = 200
