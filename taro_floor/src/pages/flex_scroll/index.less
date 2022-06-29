@@ -1,0 +1,20 @@
+.flex_scroll {
+  height: 100vh;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    height: 100px;
+    background-color: cadetblue;
+  }
+
+  .scrollContainer {
+    flex: 1;
+    overflow-y: auto;
+    .scrollArea {
+      height: 100%;
+      background-color: deepskyblue;
+    }
+  }
+}

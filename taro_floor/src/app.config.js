@@ -1,6 +1,6 @@
 export default defineAppConfig({
   pages: [
-    'pages/height_test/index',
+    'pages/flex_scroll/index',
     'pages/index/index'
   ],
   window: {
