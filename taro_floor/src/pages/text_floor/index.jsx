@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text } from '@tarojs/components'
+import { View, Text, Block } from '@tarojs/components'
 import './index.less'
 import Floor from '../../components/floor'
 
@@ -30,9 +30,36 @@ export default class Text_floor extends Component {
 
   floorRef = React.createRef()
 
+  tabs = Array(10).fill(null).map((_, idx) => {
+    return {
+      title: `标签 ${idx}`
+    }
+  })
+
+
+  renderScrollContent = (/*tabsHeight 后面想将tabs 高度抛出*/) => {
+    return (
+      <Block>
+        {this.tabs.map((_, idx) => {
+          return (
+            <View 
+              key={_} 
+              style={`background-color: #${String(idx).repeat(3)};`} 
+              className="demoView" 
+            />
+            )
+        })}
+      </Block>
+    )
+  }
+
   render () {
     return (
-      <Floor ref={this.floorRef} />
+      <Floor
+        tabs={this.tabs}
+        ref={this.floorRef}
+        renderProps={this.renderScrollContent}
+      />
     )
   }
 }
