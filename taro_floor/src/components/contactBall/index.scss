@@ -1,0 +1,23 @@
+.ballContent {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5PX 0;
+  background-color: rgba(25, 25, 25, .8);
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 8PX;
+
+  .earphone {
+    width: 24PX;
+    height: 24PX;
+  }
+
+  .textStyle {
+    margin-top: 3PX;
+    font-size: 10PX;
+    font-weight: 400;
+    color: white;
+  }
+}
