@@ -102,3 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
+taro_floor/src/components/floor.zip
+taro_floor/src/components/floatingCore.zip
